@@ -20,10 +20,5 @@ public class MoveEsquerda : MonoBehaviour {
 
         transform.position = transform.position + velocidadeVetorial * Time.deltaTime;
 
-        if (transform.position.x <= limite)
-        {
-            transform.position = new Vector3(retorno, transform.position.y, transform.position.z);        }
-
-
 	}
 }
