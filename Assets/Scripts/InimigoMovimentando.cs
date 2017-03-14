@@ -30,4 +30,11 @@ public class InimigoMovimentando : MonoBehaviour
         destino = (destino == max) ? min : max;
         StartCoroutine(Move(destino));
     }
+
+    void Update()
+    {
+
+        Vector3 direcao = Vector3.left * velocidadeVertical;
+        transform.position = transform.position + direcao * Time.deltaTime;
+    }
 }
